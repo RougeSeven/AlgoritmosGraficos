@@ -1,0 +1,15 @@
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\bin\Debug\AlgoritmosGraficosComputacionales.exe.config
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\bin\Debug\AlgoritmosGraficosComputacionales.exe
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\bin\Debug\AlgoritmosGraficosComputacionales.pdb
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.csproj.AssemblyReference.cache
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosPixeles.FrmCircunferencia.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.FrmHome.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.Properties.Resources.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.csproj.GenerateResource.cache
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.csproj.CoreCompileInputs.cache
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.exe
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.pdb
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\CurvasBezierAvanzado.FrmBezier.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosPixeles.FrmLineas.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosPixeles.FrmRelleno.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.FrmElipse.resources
