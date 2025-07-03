@@ -18,35 +18,16 @@ namespace AlgoritmosPixeles
         private int radius;
         private Pen mPen;
         private Graphics mGraph;
-        private DataTable points;
-        private int delayFactor;
+        private List<Point> points;
 
         public DiscreteCircle()
         {
             center = new Point();
             radius = 0;
             mPen=new Pen(Color.Black,2);
-            createPointsTable();
-            delayFactor = 0;
+            points=new List<Point>();
         }
-        public void createPointsTable()
-        {
-            points = new DataTable();
-            points.Columns.Add("Pixel", typeof(int));
-            points.Columns.Add("Valor X", typeof(int));
-            points.Columns.Add("Valor Y", typeof(int));
-        }
-        public void getAnimationSpeed(System.Windows.Forms.TrackBar tckSpeed)
-        {
-            try
-            {
-                delayFactor = 1 + (5 * (tckSpeed.Maximum-tckSpeed.Value));
-            }
-            catch
-            {
-                MessageBox.Show("Valor fuera de límites");
-            }
-        }
+        
         public void readData(System.Windows.Forms.TextBox txtPx, System.Windows.Forms.TextBox txtPy, System.Windows.Forms.TextBox txtRadius)
         {
             try
@@ -61,7 +42,7 @@ namespace AlgoritmosPixeles
             }
         }
 
-        public void initializeData(System.Windows.Forms.TextBox txtPx, System.Windows.Forms.TextBox txtPy, System.Windows.Forms.TextBox txtRadius, PictureBox picCanvas, DataGridView pointsTable)
+        public void initializeData(System.Windows.Forms.TextBox txtPx, System.Windows.Forms.TextBox txtPy, System.Windows.Forms.TextBox txtRadius, PictureBox picCanvas)
         {
             txtPx.Text = "";
             txtPy.Text = "";
@@ -69,13 +50,7 @@ namespace AlgoritmosPixeles
             picCanvas.Refresh();
             center = new Point();
             radius = 0;
-            points.Rows.Clear();
-            pointsTable.DataSource = points;
-            delayFactor = 0;
-            foreach (DataGridViewColumn col in pointsTable.Columns)
-            {
-                col.Width = pointsTable.Width / 3;
-            }
+            points.Clear();
         }
         public void calculate()
         {
@@ -89,34 +64,14 @@ namespace AlgoritmosPixeles
                 k = Convert.ToInt32(Math.Round((double)radius/2));
             }
         }
-        public void calculateOctant(PictureBox picCanvas, DataGridView pointsTable)
+        public void calculateOctant(PictureBox picCanvas)
         {
             int x = 0;
             int y = radius;
             int p = 1-radius;
             Point pointi= new Point(center.X+x, center.Y+y);
             Point pointf= new Point();
-            int k = 0;
-            while (x < y)
-            {
-                x++;
-                if (p < 0)
-                {
-                    p = p + (2 * x) + 3;
-                }
-                else
-                {
-                    y--;
-                    p = p + 2 * (x - y) + 5;
-                }
-                k++;
-            }
-            Point[] octant = new Point[k+1];
-            octant[0]=pointi;
-            x = 0;
-            y = radius;
-            p = 1 - radius;
-            int i = 0;
+            points.Add(pointi);
             while (x<y)
             {
                 x++;
@@ -130,13 +85,13 @@ namespace AlgoritmosPixeles
                     p = p + 2 * (x - y) + 5;
                 }
                 pointf= new Point(center.X + x, center.Y + y);
-                i++;
-                octant[i]=pointf;
+                points.Add(pointf);
             }
-            plotCircle(picCanvas, octant, pointsTable);
+            plotCircle(picCanvas);
         }
-        public void plotCircle(PictureBox picCanvas, Point[] octant, DataGridView pointsTable)
+        public void plotCircle(PictureBox picCanvas)
         {
+            Point[] octant=points.ToArray();
             SolidBrush mBrush = new SolidBrush(Color.Black);
             mGraph = picCanvas.CreateGraphics();
             picCanvas.Refresh();
@@ -174,16 +129,9 @@ namespace AlgoritmosPixeles
                 for(int j = 0; j < octant.Length; j++)
                 {
                     mGraph.FillRectangle(mBrush, circulo[i][j].X, circulo[i][j].Y, 1, 1);
-                    Thread.Sleep(delayFactor);
-                    points.Rows.Add(((8*i)+j), circulo[i][j].X, circulo[i][j].Y);
-                    if (pointsTable.InvokeRequired)
-                    {
-                        pointsTable.Invoke((MethodInvoker)(() =>
-                        {
-                            pointsTable.Refresh();
-                            pointsTable.FirstDisplayedScrollingRowIndex = pointsTable.Rows.Count - 1;
-                        }));
-                    }
+                    Thread.Sleep(25);
+                    points.Add(circulo[i][j]);
+                    
                 }
             }
         }

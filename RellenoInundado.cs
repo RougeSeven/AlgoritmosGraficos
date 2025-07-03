@@ -18,24 +18,17 @@ namespace AlgoritmosPixeles
         private Graphics mGraph;
         private SolidBrush mBrush;
         private Point startpoint;
-        private DataTable pointsList;
+        private List<Point> pointsList;
         private int delayFactor;
         
         public RellenoInundado()
         {
             mBrush = new SolidBrush(Color.LightCoral);
             startpoint = new Point();
-            createPointsTable();
         }
-        public void InitializeData(DataGridView pointsTable)
+        public void InitializeData()
         {
-            pointsTable.Rows.Clear();
-            pointsList.Rows.Clear();
-            pointsTable.DataSource = pointsList;
-            foreach (DataGridViewColumn col in pointsTable.Columns)
-            {
-                col.Width = pointsTable.Width/3;
-            }
+            pointsList.Clear();
         }
         public void getAnimationSpeed(TrackBar tckSpeed)
         {
@@ -47,13 +40,6 @@ namespace AlgoritmosPixeles
             {
                 MessageBox.Show("Valor fuera de límites");
             }
-        }
-        public void createPointsTable()
-        {
-            pointsList = new DataTable();
-            pointsList.Columns.Add("Pixel", typeof(int));
-            pointsList.Columns.Add("Valor X", typeof(int));
-            pointsList.Columns.Add("Valor Y", typeof(int));
         }
         public void getStartPoint(Point mouseClick)
         {
@@ -67,7 +53,11 @@ namespace AlgoritmosPixeles
                 MessageBox.Show("Coordenadas fuera de rango.");
                 return false;
             }
-            Color pixelColor=canvas.GetPixel(x,y);
+            Color pixelColor;
+            lock (canvas)
+            {
+                pixelColor = canvas.GetPixel(x, y);
+            }
             if(pixelColor.ToArgb()!=Color.Black.ToArgb() && pixelColor.ToArgb()!=mBrush.Color.ToArgb())
             {
                 return true;
@@ -77,10 +67,10 @@ namespace AlgoritmosPixeles
                 return false;
             }
         }
-        public void fillShape(PictureBox picCanvas, Bitmap canvas, DataGridView pointsTable)
+        public void fillShape(PictureBox picCanvas, Bitmap canvas)
         {
 
-            Task.Run(() => { floodFillIterative(picCanvas, canvas, pointsTable); });
+            Task.Run(() => { floodFillIterative(picCanvas, canvas); });
         }
         public void FillPoint(int x, int y, PictureBox picCanvas, Bitmap canvas)
         {
@@ -94,10 +84,9 @@ namespace AlgoritmosPixeles
             }
         }
 
-        public void floodFillIterative(PictureBox picCanvas, Bitmap canvas, DataGridView pointsTable)
+        public void floodFillIterative(PictureBox picCanvas, Bitmap canvas )
         {
             Queue<Point> puntos = new Queue<Point>();
-            pointsTable.DataSource = pointsList;
             puntos.Enqueue(startpoint);//Encolar el punto inicial
             Point puntoActual;//Crear un punto en blanco para iterar
             int counter = 0;
@@ -112,15 +101,7 @@ namespace AlgoritmosPixeles
                 {
                     FillPoint(puntoActual.X, puntoActual.Y, picCanvas, canvas);
 
-                    if (pointsTable.InvokeRequired)
-                    {
-                        pointsTable.Invoke((MethodInvoker)(() =>
-                        {
-                            pointsList.Rows.Add(counter, puntoActual.X, puntoActual.Y);
-                            pointsTable.Refresh();
-                            pointsTable.FirstDisplayedScrollingRowIndex = pointsTable.Rows.Count - 1;
-                        }));
-                    }
+                    
 
                     counter++;
                     Thread.Sleep(delayFactor);

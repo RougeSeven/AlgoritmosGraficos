@@ -31,7 +31,6 @@ namespace AlgoritmosPixeles
         private void FrmRelleno_Load(object sender, EventArgs e)
         {
             mLinea.InitializeComponents(picCanvas);
-            mRelleno.InitializeData(pointsTable);
             canvas = new Bitmap(picCanvas.Width, picCanvas.Height);
             mode = "draw";
             lblSpeed.Text = "x" + tcbSpeed.Value.ToString();
@@ -48,7 +47,7 @@ namespace AlgoritmosPixeles
             else
             {
                 mRelleno.getStartPoint(ev.Location);
-                mRelleno.fillShape(picCanvas,canvas, pointsTable);
+                mRelleno.fillShape(picCanvas,canvas);
             }
         }
 

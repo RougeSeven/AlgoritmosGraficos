@@ -26,10 +26,7 @@ namespace AlgoritmosPixeles
         private bool fullyVertical;
         private bool negativeX;
         private bool negativeY;
-        private const int sf= 20;
-        private int delayFactor;
-        DataTable points;
-
+        private List<Point> points;
 
         public BresenhamLines()
         {
@@ -42,30 +39,12 @@ namespace AlgoritmosPixeles
             p = 0;
             const_add = 0;
             const_sub = 0;
-            delayFactor = 0;
             fullyVertical = false;
             negativeX = false;
             negativeY = false;
-            createPointsTable();
+            points = new List<Point>();
         }
-        public void getAnimationSpeed(System.Windows.Forms.TrackBar tckSpeed)
-        {
-            try
-            {
-                delayFactor = 1 + (5 * (tckSpeed.Maximum - tckSpeed.Value));
-            }
-            catch
-            {
-                MessageBox.Show("Valor fuera de límites");
-            }
-        }
-        public void createPointsTable()
-        {
-            points = new DataTable();
-            points.Columns.Add("Pixel", typeof(int));
-            points.Columns.Add("Valor X", typeof(int));
-            points.Columns.Add("Valor Y", typeof(int));
-        }
+        
 
         public void readData(System.Windows.Forms.TextBox txtPx1, System.Windows.Forms.TextBox txtPy1, System.Windows.Forms.TextBox txtPx2, System.Windows.Forms.TextBox txtPy2)
         {
@@ -83,7 +62,7 @@ namespace AlgoritmosPixeles
         }
 
         public void initializeData(System.Windows.Forms.TextBox txtPx1, System.Windows.Forms.TextBox txtPy1, System.Windows.Forms.TextBox txtPx2, System.Windows.Forms.TextBox txtPy2, 
-            PictureBox picCanvas, DataGridView pointsTable)
+            PictureBox picCanvas)
         {
             txtPx1.Text="";
             txtPx2.Text = "";
@@ -102,13 +81,7 @@ namespace AlgoritmosPixeles
             fullyVertical = false;
             negativeX = false;
             negativeY = false;
-            points.Rows.Clear();
-            delayFactor = 0;
-            pointsTable.DataSource = points;
-            foreach (DataGridViewColumn col in pointsTable.Columns)
-            {
-                col.Width = pointsTable.Width / 3;
-            }
+            points.Clear();
         }
         public void calculate()
         {
@@ -141,9 +114,10 @@ namespace AlgoritmosPixeles
                 const_sub = (2 * Convert.ToInt32(diff_x)) - (2 * Convert.ToInt32(diff_y));
             }
         }
-        public void drawPoints(PictureBox picCanvas, DataGridView pointsTable)
+        public void drawPoints(PictureBox picCanvas)
         {
-            points.Rows.Clear();
+            picCanvas.Refresh();
+            drawEnds(picCanvas);
             Point point = new Point();
             Pen mPen;
             mPen = new Pen(Color.Black, 2);
@@ -154,9 +128,8 @@ namespace AlgoritmosPixeles
             mGraph.DrawLine(mPen, point, point);
             int p_k = p;
             Point pointi = p_0;
-            points.Rows.Add(0, pointi.X, pointi.Y);
+            points.Add(pointi);
             Point pointf=new Point();
-            pointsTable.DataSource = points;
             for (int i=0;i<k;i++)
             {
                 if(!fullyVertical)
@@ -188,25 +161,18 @@ namespace AlgoritmosPixeles
                     pointf.Y = (!negativeY) ? pointi.Y + 1 : pointi.Y - 1;
                 }
                     mGraph.DrawLine(mPen, pointi, pointf);
-                Thread.Sleep(delayFactor);
+                Thread.Sleep(25);
                 //Agregando a la tabla
                 pointi = pointf;
-                points.Rows.Add(i + 1, pointf.X, pointf.Y);
-                if (pointsTable.InvokeRequired)
-                {
-                    pointsTable.Invoke((MethodInvoker)(() =>
-                    {
-                        pointsTable.Refresh();
-                        pointsTable.FirstDisplayedScrollingRowIndex = pointsTable.Rows.Count - 1;
-                    }));
-                }
+                points.Add(pointf);
+                
             }
         }
         public void drawEnds(PictureBox picCanvas)
         {
             Pen mPen;
             Graphics mGraph;
-            mPen = new Pen(Color.Red, 2);
+            mPen = new Pen(Color.Green, 2);
             mGraph = picCanvas.CreateGraphics();
             int radius = 5;
             mGraph.DrawEllipse(mPen, (p_0.X - radius), (p_0.Y - radius), (2 * radius), (2 * radius));

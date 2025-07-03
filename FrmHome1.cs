@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AlgoritmoRecorteLineas;
 using AlgoritmosPixeles;
 using CurvasBezierAvanzado;
 
@@ -42,7 +43,9 @@ namespace AlgoritmosGraficosComputacionales
 
         private void menuLineClip_Click(object sender, EventArgs e)
         {
-            //Arreglar Bresenham primero
+            FrmRecorte fRecorte = new FrmRecorte();
+            fRecorte.MdiParent = this;
+            fRecorte.Show();
         }
 
         private void menuBezierCurve_Click(object sender, EventArgs e)
@@ -57,6 +60,18 @@ namespace AlgoritmosGraficosComputacionales
             FrmElipse fElipse = FrmElipse.getInstance();
             fElipse.MdiParent = this;
             fElipse.Show();
+        }
+
+        private void recortesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void menuShapeClip_Click(object sender, EventArgs e)
+        {
+            FrmRecorteFiguras fRecorteF = new FrmRecorteFiguras();
+            fRecorteF.MdiParent = this;
+            fRecorteF.Show();
         }
     }
 }

@@ -34,14 +34,12 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.grbControl = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tcbSpeed = new System.Windows.Forms.TrackBar();
-            this.pointsTable = new System.Windows.Forms.DataGridView();
             this.lblSpeed = new System.Windows.Forms.Label();
+            this.tcbSpeed = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.grbControl.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcbSpeed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pointsTable)).BeginInit();
             this.SuspendLayout();
             // 
             // picCanvas
@@ -49,7 +47,7 @@
             this.picCanvas.BackColor = System.Drawing.SystemColors.Control;
             this.picCanvas.Location = new System.Drawing.Point(304, 12);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(502, 562);
+            this.picCanvas.Size = new System.Drawing.Size(890, 562);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             this.picCanvas.Click += new System.EventHandler(this.picCanvas_Click);
@@ -106,6 +104,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Velocidad de la animacion";
             // 
+            // lblSpeed
+            // 
+            this.lblSpeed.AutoSize = true;
+            this.lblSpeed.Location = new System.Drawing.Point(209, 25);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(16, 20);
+            this.lblSpeed.TabIndex = 1;
+            this.lblSpeed.Text = "x";
+            // 
             // tcbSpeed
             // 
             this.tcbSpeed.LargeChange = 1;
@@ -117,33 +124,12 @@
             this.tcbSpeed.Value = 1;
             this.tcbSpeed.Scroll += new System.EventHandler(this.tcbSpeed_Scroll);
             // 
-            // pointsTable
-            // 
-            this.pointsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pointsTable.Location = new System.Drawing.Point(835, 12);
-            this.pointsTable.Name = "pointsTable";
-            this.pointsTable.RowHeadersVisible = false;
-            this.pointsTable.RowHeadersWidth = 62;
-            this.pointsTable.RowTemplate.Height = 28;
-            this.pointsTable.Size = new System.Drawing.Size(359, 562);
-            this.pointsTable.TabIndex = 6;
-            // 
-            // lblSpeed
-            // 
-            this.lblSpeed.AutoSize = true;
-            this.lblSpeed.Location = new System.Drawing.Point(209, 25);
-            this.lblSpeed.Name = "lblSpeed";
-            this.lblSpeed.Size = new System.Drawing.Size(16, 20);
-            this.lblSpeed.TabIndex = 1;
-            this.lblSpeed.Text = "x";
-            // 
             // FrmRelleno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1220, 633);
-            this.Controls.Add(this.pointsTable);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbControl);
             this.Controls.Add(this.picCanvas);
@@ -155,7 +141,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcbSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pointsTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -169,7 +154,6 @@
         private System.Windows.Forms.GroupBox grbControl;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TrackBar tcbSpeed;
-        private System.Windows.Forms.DataGridView pointsTable;
         private System.Windows.Forms.Label lblSpeed;
     }
 }

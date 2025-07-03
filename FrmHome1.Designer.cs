@@ -33,11 +33,11 @@
             this.menuCircunferencia = new System.Windows.Forms.ToolStripMenuItem();
             this.menuElipse = new System.Windows.Forms.ToolStripMenuItem();
             this.rellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recortesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.curvasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFloodFill = new System.Windows.Forms.ToolStripMenuItem();
+            this.recortesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuLineClip = new System.Windows.Forms.ToolStripMenuItem();
             this.menuShapeClip = new System.Windows.Forms.ToolStripMenuItem();
+            this.curvasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBezierCurve = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBsplineCurve = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -89,6 +89,13 @@
             this.rellenoToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
             this.rellenoToolStripMenuItem.Text = "Relleno";
             // 
+            // menuFloodFill
+            // 
+            this.menuFloodFill.Name = "menuFloodFill";
+            this.menuFloodFill.Size = new System.Drawing.Size(181, 34);
+            this.menuFloodFill.Text = "FloodFill";
+            this.menuFloodFill.Click += new System.EventHandler(this.menuFloodFill_Click);
+            // 
             // recortesToolStripMenuItem
             // 
             this.recortesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -97,22 +104,7 @@
             this.recortesToolStripMenuItem.Name = "recortesToolStripMenuItem";
             this.recortesToolStripMenuItem.Size = new System.Drawing.Size(95, 29);
             this.recortesToolStripMenuItem.Text = "Recortes";
-            // 
-            // curvasToolStripMenuItem
-            // 
-            this.curvasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuBezierCurve,
-            this.menuBsplineCurve});
-            this.curvasToolStripMenuItem.Name = "curvasToolStripMenuItem";
-            this.curvasToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
-            this.curvasToolStripMenuItem.Text = "Curvas";
-            // 
-            // menuFloodFill
-            // 
-            this.menuFloodFill.Name = "menuFloodFill";
-            this.menuFloodFill.Size = new System.Drawing.Size(270, 34);
-            this.menuFloodFill.Text = "FloodFill";
-            this.menuFloodFill.Click += new System.EventHandler(this.menuFloodFill_Click);
+            this.recortesToolStripMenuItem.Click += new System.EventHandler(this.recortesToolStripMenuItem_Click);
             // 
             // menuLineClip
             // 
@@ -126,18 +118,28 @@
             this.menuShapeClip.Name = "menuShapeClip";
             this.menuShapeClip.Size = new System.Drawing.Size(270, 34);
             this.menuShapeClip.Text = "Figuras";
+            this.menuShapeClip.Click += new System.EventHandler(this.menuShapeClip_Click);
+            // 
+            // curvasToolStripMenuItem
+            // 
+            this.curvasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuBezierCurve,
+            this.menuBsplineCurve});
+            this.curvasToolStripMenuItem.Name = "curvasToolStripMenuItem";
+            this.curvasToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
+            this.curvasToolStripMenuItem.Text = "Curvas";
             // 
             // menuBezierCurve
             // 
             this.menuBezierCurve.Name = "menuBezierCurve";
-            this.menuBezierCurve.Size = new System.Drawing.Size(270, 34);
+            this.menuBezierCurve.Size = new System.Drawing.Size(170, 34);
             this.menuBezierCurve.Text = "Bezier";
             this.menuBezierCurve.Click += new System.EventHandler(this.menuBezierCurve_Click);
             // 
             // menuBsplineCurve
             // 
             this.menuBsplineCurve.Name = "menuBsplineCurve";
-            this.menuBsplineCurve.Size = new System.Drawing.Size(270, 34);
+            this.menuBsplineCurve.Size = new System.Drawing.Size(170, 34);
             this.menuBsplineCurve.Text = "Bspline";
             // 
             // FrmHome
