@@ -51,7 +51,7 @@ namespace AlgoritmoRecorteLineas
         }
         public void drawWindow(PictureBox picCanvas)
         {
-            Color backColor = Color.FromArgb(80, 27, 110, 237);
+            Color backColor = Color.FromArgb(255, 255, 255, 237);
             mPen = new Pen(Color.Black, 2);
             mBrush = new SolidBrush(backColor);
             mGraph=picCanvas.CreateGraphics();
@@ -109,7 +109,6 @@ namespace AlgoritmoRecorteLineas
                 code += pointCode[i].ToString();
             }
             isPointInArea = (pointCode.SequenceEqual(areaCode));
-            MessageBox.Show("Codigo: "+code);
             return isPointInArea;
         }
         public bool[] getPointCode(Point point)
@@ -170,8 +169,8 @@ namespace AlgoritmoRecorteLineas
                 {
                     intersectX = Xmin;
                 }
-                intersectY = Convert.ToInt32(Math.Round((line.slope * intersectX) + lineIntersectB));
-                if(!checkPointInArea(new Point(intersectX, intersectY)))//Diagonal por arriba o debajo
+                intersectY = line.pointsList.Find(point => point.X == intersectX).Y;
+                if (!checkPointInArea(new Point(intersectX, intersectY)))//Diagonal por arriba o debajo
                 {
                     if (code[0])//Diagonal arriba
                     {

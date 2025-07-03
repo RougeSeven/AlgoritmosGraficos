@@ -104,6 +104,7 @@
             // 
             this.txtPy.Location = new System.Drawing.Point(191, 62);
             this.txtPy.Name = "txtPy";
+            this.txtPy.ReadOnly = true;
             this.txtPy.Size = new System.Drawing.Size(100, 26);
             this.txtPy.TabIndex = 8;
             // 
@@ -111,6 +112,7 @@
             // 
             this.txtPx.Location = new System.Drawing.Point(43, 62);
             this.txtPx.Name = "txtPx";
+            this.txtPx.ReadOnly = true;
             this.txtPx.Size = new System.Drawing.Size(100, 26);
             this.txtPx.TabIndex = 7;
             // 

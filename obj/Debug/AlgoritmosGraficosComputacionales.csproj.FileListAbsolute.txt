@@ -13,3 +13,5 @@ C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\CurvasBe
 C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosPixeles.FrmLineas.resources
 C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosPixeles.FrmRelleno.resources
 C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmosGraficosComputacionales.FrmElipse.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmoRecorteLineas.FrmRecorteFiguras.resources
+C:\Users\rouss\source\repos\AlgoritmosGraficosComputacionales\obj\Debug\AlgoritmoRecorteLineas.FrmRecorte.resources

@@ -86,6 +86,9 @@
     <Compile Include="FrmRecorte.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmRecorte.Designer.cs">
+      <DependentUpon>FrmRecorte.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRecorteFiguras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome1.resx">
       <DependentUpon>FrmHome1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecorte.resx">
+      <DependentUpon>FrmRecorte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRecorteFiguras.resx">
       <DependentUpon>FrmRecorteFiguras.cs</DependentUpon>

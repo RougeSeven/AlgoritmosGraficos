@@ -3,15 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\rellenoinundado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:rellenoinundado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\aplicarrecorte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:aplicarrecorte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\frmrelleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\shapeclipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:shapeclipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\frmrecorte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:frmrecorte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\frmcircunferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:frmcircunferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\frmhome1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:frmhome1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\frmhome1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:frmhome1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\frmrelleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:frmrelleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|c:\\users\\rouss\\source\\repos\\algoritmosgraficoscomputacionales\\frmrelleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\frmrelleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D20C8E72-1037-4F8B-BC3D-306B12ECF15F}|AlgoritmosGraficosComputacionales.csproj|solutionrelative:frmrelleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +50,81 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AplicarRecorte.cs",
+              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\AplicarRecorte.cs",
+              "RelativeDocumentMoniker": "AplicarRecorte.cs",
+              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\AplicarRecorte.cs*",
+              "RelativeToolTip": "AplicarRecorte.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T12:19:08.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ShapeClipper.cs",
+              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\ShapeClipper.cs",
+              "RelativeDocumentMoniker": "ShapeClipper.cs",
+              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\ShapeClipper.cs",
+              "RelativeToolTip": "ShapeClipper.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T12:18:30.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmRecorte.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmRecorte.cs",
+              "RelativeDocumentMoniker": "FrmRecorte.cs",
+              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmRecorte.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmRecorte.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T12:16:13.291Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmHome1.cs",
+              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmHome1.cs",
+              "RelativeDocumentMoniker": "FrmHome1.cs",
+              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmHome1.cs",
+              "RelativeToolTip": "FrmHome1.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAC8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T03:49:13.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmCircunferencia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmCircunferencia.cs",
+              "RelativeDocumentMoniker": "FrmCircunferencia.cs",
+              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmCircunferencia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmCircunferencia.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T12:19:29.883Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmHome1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmHome1.cs",
+              "RelativeDocumentMoniker": "FrmHome1.cs",
+              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmHome1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmHome1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T03:49:00.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmRelleno.cs",
               "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmRelleno.cs",
               "RelativeDocumentMoniker": "FrmRelleno.cs",
@@ -38,33 +132,18 @@
               "RelativeToolTip": "FrmRelleno.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwCAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:39:14.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T02:39:14.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "FrmRelleno.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmRelleno.cs",
               "RelativeDocumentMoniker": "FrmRelleno.cs",
               "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\FrmRelleno.cs [Dise\u00F1o]",
               "RelativeToolTip": "FrmRelleno.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:38:37.988Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RellenoInundado.cs",
-              "DocumentMoniker": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\RellenoInundado.cs",
-              "RelativeDocumentMoniker": "RellenoInundado.cs",
-              "ToolTip": "C:\\Users\\rouss\\source\\repos\\AlgoritmosGraficosComputacionales\\RellenoInundado.cs",
-              "RelativeToolTip": "RellenoInundado.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwDoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:28:08.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T02:38:37.988Z"
             }
           ]
         }

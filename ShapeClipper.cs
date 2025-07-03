@@ -221,7 +221,6 @@ namespace AlgoritmoRecorteLineas
                 code += pointCode[i].ToString();
             }
             isPointInArea = (pointCode.SequenceEqual(areaCode));
-            MessageBox.Show("Codigo: " + code);
             return isPointInArea;
         }
         public bool[] getPointCode(Point point)
